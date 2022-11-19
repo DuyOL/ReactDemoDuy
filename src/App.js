@@ -7,8 +7,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello World React.Js (Nguyễn Đức Duy)
         </p>
+        {/* <div>Count = {count}</div>
+        <button onclick={() => dispatch(increaseCounter())}>Increase</button>
+        <button onclick={() => dispatch(increaseCounter())}>Decrease</button> */}
         <a
           className="App-link"
           href="https://reactjs.org"
