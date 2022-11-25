@@ -17,6 +17,11 @@ class UserInfo extends React.Component {
             age: event.target.value
         })
     }
+    hendleOnChangeaddress = (event) => {
+        this.setState({
+            address: event.target.value
+        })
+    }
     handleOnSubmit = (event) => {
         event.preventDefault();
         console.log(this.state)
@@ -24,7 +29,7 @@ class UserInfo extends React.Component {
     render() {
         return (
             <div>
-                My name is {this.state.name} and I'am From {this.state.age}
+                My name is {this.state.name} and I'am From {this.state.age} and address {this.state.address}
                 {/* <button onClick={this.hendleClick}>Click me</button> */}
                 {/* <button onClick={(event) => { this.hendleClick(event) }}>Click Me</button> */}
                 <form onSubmit={(event) => this.handleOnSubmit(event)}>
@@ -40,6 +45,13 @@ class UserInfo extends React.Component {
                         value={this.state.age}
                         type="text"
                         onChange={(event) => this.hendleOnChangeAge(event)}
+                    />
+                    <button>Submit</button>
+                    <label> Your address: </label>
+                    <input
+                        value={this.state.address}
+                        type="text"
+                        onChange={(event) => this.hendleOnChangeaddress(event)}
                     />
                     <button>Submit</button>
                 </form>
