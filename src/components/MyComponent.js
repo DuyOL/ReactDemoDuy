@@ -22,17 +22,22 @@ class MyComponent extends React.Component {
         // props => viết tắt properties
         // DRY : Don't repeat youseft
         return (
-            <div>
-                <AddUserInfo
-                    handleAddNewUsers={this.handleAddNewUsers}
-                />
-                <br></br>
-                <hr />
-                <Displayinfo
-                    listUsers={this.state.listUsers}
-                />
-                <hr />
-            </div>
+            <>
+                <div className='a'>
+                    <AddUserInfo
+                        handleAddNewUsers={this.handleAddNewUsers}
+                    />
+                    <br></br>
+                    <hr />
+                    <Displayinfo
+                        listUsers={this.state.listUsers}
+                    />
+                    <hr />
+                </div>
+                <div className='b'>
+
+                </div>
+            </>
         );
     }
 }
