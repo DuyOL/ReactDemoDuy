@@ -21,6 +21,7 @@ class MyComponent extends React.Component {
     render() {
         // props => viết tắt properties
         // DRY : Don't repeat youseft
+        // const test = ' Jame học React JS'
         return (
             <>
                 <div className='a'>
