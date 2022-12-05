@@ -3,8 +3,12 @@ import './Displayinfo.scss';
 import logo from './../logo.svg';
 
 class Displayinfo extends React.Component {
-    state = {
-        isShowlistUser: true
+    //babel compiler
+    constructor(props) {
+        super(props)
+        this.state = {
+            isShowlistUser: true
+        }
     }
     handleShowHide = () => {
         this.setState({
