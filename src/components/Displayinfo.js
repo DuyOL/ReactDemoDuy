@@ -5,9 +5,26 @@ import logo from './../logo.svg';
 class Displayinfo extends React.Component {
     //babel compiler
     constructor(props) {
+        console.log('>>> call construstor:   1')
         super(props)
         this.state = {
             isShowlistUser: true
+        }
+    }
+    componentDidMount() {
+        console.log('>>> Call me component did mount')
+        setTimeout(() => {
+            document.title = 'React JS'
+        }, 3000)
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('>>> Call me component did update', this.props, prevProps)
+        if (this.props.listUsers !== prevProps.listUsers) {
+            if (this.props.listUsers.length === 5) {
+                alert('You got 5 users')
+
+            }
         }
     }
     handleShowHide = () => {
@@ -16,6 +33,7 @@ class Displayinfo extends React.Component {
         })
     }
     render() {
+        console.log('>>> call me render   ')
         // destructuring array/object
         const { listUsers } = this.props;
         // console.log(listUsers)
