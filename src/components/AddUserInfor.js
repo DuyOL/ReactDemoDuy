@@ -97,6 +97,7 @@ const AddUserInfo = (props) => {
             id: Math.floor((Math.random() * 100) + 1) + 'Random',
             name: name,
             age: age,
+            address: address,
         });
     }
     return (
