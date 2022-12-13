@@ -73,7 +73,7 @@ const AddUserInfo = (props) => {
     //     age: 20
     // };
     const [name, setName] = useState('');
-    const [address, setAddress] = useState('Ha Duong');
+    const [address, setAddress] = useState('');
     const [age, setAge] = useState('');
     // JSX
     const hendleOnChangeInput = (event) => {
@@ -101,7 +101,7 @@ const AddUserInfo = (props) => {
     }
     return (
         <div>
-            My name is {name} and I'am From {age} and address {address}
+            My name is {name} and I'am {age} my age and my address {address}
             {/* <button onClick={this.hendleClick}>Click me</button> */}
             {/* <button onClick={(event) => { this.hendleClick(event) }}>Click Me</button> */}
             <form onSubmit={(event) => handleOnSubmit(event)}>

@@ -75,9 +75,6 @@ const Displayinfo = (props) => {
     const { listUsers } = props;
 
     const [isShowHideListUser, setShowHideListUser] = useState(true);
-    // this.state = {
-    //     isShowHideListUser: true
-    // }
     const handleShowHideListUser = () => {
 
         setShowHideListUser(!isShowHideListUser)
@@ -107,6 +104,7 @@ const Displayinfo = (props) => {
                                 <div>
                                     <div>My Name is  {user.name} </div>
                                     <div>My age      {user.age}</div>
+                                    <div>My address  {user.address}</div>
                                 </div>
                                 <div>
                                     <button onClick={() => props.handleDeleteUser(user.id)}> Delete </button>

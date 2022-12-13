@@ -54,9 +54,9 @@ import AddUserInfo from "./AddUserInfor";
 const MyComponent = (props) => {
     const [listUsers, setListUsers] = useState(
         [
-            { id: 1, name: 'Nguyen Duc Duy', age: '16' },
-            { id: 2, name: 'James', age: '26' },
-            { id: 3, name: 'Roys', age: '69' },
+            { id: 1, name: 'Nguyen Duc Duy', age: '16', address: 'Ha Noi' },
+            { id: 2, name: 'James', age: '26', address: 'Hai Duong' },
+            { id: 3, name: 'Roys', age: '69', address: 'Tp Ho Chi Minh' },
         ]
     )
     const handleAddNewUsers = (userObj) => {
