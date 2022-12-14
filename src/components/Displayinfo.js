@@ -84,7 +84,7 @@ const Displayinfo = (props) => {
     useEffect(
         () => {
             if (listUsers.length === 0) {
-                alert('I like all of you')
+                alert('Xoá Luôn User cuối cùng')
             }
             console.log(">>> Call me useEffect ")
         }, [listUsers]
