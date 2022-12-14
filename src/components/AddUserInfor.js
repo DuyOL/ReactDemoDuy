@@ -102,7 +102,7 @@ const AddUserInfo = (props) => {
     }
     return (
         <div>
-            My name is {name} and I'am {age} my age and my address {address}
+            My name is {name} and I' am {age} my age and my address {address}
             {/* <button onClick={this.hendleClick}>Click me</button> */}
             {/* <button onClick={(event) => { this.hendleClick(event) }}>Click Me</button> */}
             <form onSubmit={(event) => handleOnSubmit(event)}>

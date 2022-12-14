@@ -84,7 +84,7 @@ const Displayinfo = (props) => {
     useEffect(
         () => {
             if (listUsers.length === 0) {
-                alert('Xoá Luôn User cuối cùng')
+                alert('Xoá User cuối cùng')
             }
             console.log(">>> Call me useEffect ")
         }, [listUsers]
